@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: appleHuman.ma
-//Last modified: Sun, Aug 26, 2018 10:08:03 PM
+//Last modified: Sun, Aug 26, 2018 10:47:01 PM
 //Codeset: 932
 requires maya "2017ff05";
 requires -nodeType "HIKSolverNode" -nodeType "HIKCharacterNode" -nodeType "HIKSkeletonGeneratorNode"
@@ -23,15 +23,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "8F5C65E4-401C-6F1F-D1BF-1CBDEEF39967";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 741.51421604582288 -117.67900241143508 744.77009308100651 ;
-	setAttr ".r" -type "double3" -4.0938816800447446 368.77625432929619 -5.0284917798600335e-017 ;
+	setAttr ".t" -type "double3" 993.11514573305578 -116.74084705511783 413.82401524900467 ;
+	setAttr ".r" -type "double3" -4.6938816800473235 378.37625432923971 -1.0473301062199881e-016 ;
 	setAttr ".rp" -type "double3" -3.5527136788005009e-015 0 -1.1368683772161603e-013 ;
 	setAttr ".rpt" -type "double3" -425.23789128904912 348.29048796703802 1329.4392193484305 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F61BEB4C-4EE7-AEE0-E30D-B49CBA433649";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 150;
-	setAttr ".coi" 2080.7186262124269;
+	setAttr ".coi" 1815.0569709485171;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -18265,14 +18265,6 @@ createNode hikIKEffector -n "Character1_Ctrl_LeftWristEffector" -p "Character1_C
 	addAttr -ci true -sn "pull" -ln "pull" -min 0 -max 1 -at "double";
 	addAttr -ci true -sn "stiffness" -ln "stiffness" -min 0 -max 1 -at "double";
 	setAttr -k off -cb on ".v";
-	setAttr ".t" -type "double3" 48.077934265136719 88.119216918945313 0.1202845573425293 ;
-	setAttr -av ".tz";
-	setAttr -av ".ty";
-	setAttr -av ".tx";
-	setAttr ".r" -type "double3" 0 0 0 ;
-	setAttr -av ".rz";
-	setAttr -av ".ry";
-	setAttr -av ".rx";
 	setAttr -k off ".sx";
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
@@ -18353,14 +18345,6 @@ createNode hikIKEffector -n "Character1_Ctrl_LeftElbowEffector" -p "Character1_C
 	addAttr -ci true -sn "pull" -ln "pull" -min 0 -max 1 -at "double";
 	addAttr -ci true -sn "stiffness" -ln "stiffness" -min 0 -max 1 -at "double";
 	setAttr -k off -cb on ".v";
-	setAttr ".t" -type "double3" 34.356483459472656 100.41912841796875 -4.0711026191711426 ;
-	setAttr -av ".tz";
-	setAttr -av ".ty";
-	setAttr -av ".tx";
-	setAttr ".r" -type "double3" 9.8077979110887039e-006 -2.6307340382340044e-006 7.18865026236445e-006 ;
-	setAttr -av ".rz";
-	setAttr -av ".ry";
-	setAttr -av ".rx";
 	setAttr -k off ".sx";
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
@@ -18479,14 +18463,6 @@ createNode hikIKEffector -n "Character1_Ctrl_LeftShoulderEffector" -p "Character
 	addAttr -ci true -sn "pull" -ln "pull" -min 0 -max 1 -at "double";
 	addAttr -ci true -sn "stiffness" -ln "stiffness" -min 0 -max 1 -at "double";
 	setAttr -k off -cb on ".v";
-	setAttr ".t" -type "double3" 16.770517349243164 121.13215637207031 -1.423893928527832 ;
-	setAttr -av ".tz";
-	setAttr -av ".ty";
-	setAttr -av ".tx";
-	setAttr ".r" -type "double3" -7.0654949603424527e-021 0.00017357567434587019 0.00047643564336469484 ;
-	setAttr -av ".rz";
-	setAttr -av ".ry";
-	setAttr -av ".rx";
 	setAttr -k off ".sx";
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
@@ -19017,10 +18993,6 @@ createNode hikFKJoint -n "Character1_Ctrl_LeftShoulder" -p "Character1_Ctrl_Spin
 	setAttr -k off ".tx";
 	setAttr -k off ".ty";
 	setAttr -k off ".tz";
-	setAttr ".r" -type "double3" 1.490885006936024e-016 -4.0999337690740647e-016 -3.1790016762479589e-015 ;
-	setAttr -av ".rz";
-	setAttr -av ".ry";
-	setAttr -av ".rx";
 	setAttr -l on ".s";
 	setAttr -k off ".sx";
 	setAttr -k off ".sy";
@@ -19045,10 +19017,6 @@ createNode hikFKJoint -n "Character1_Ctrl_LeftArm" -p "Character1_Ctrl_LeftShoul
 	setAttr -k off ".tx";
 	setAttr -k off ".ty";
 	setAttr -k off ".tz";
-	setAttr ".r" -type "double3" -5.4109016159631796e-007 0.00017357567432212532 0.0004764356433852621 ;
-	setAttr -av ".rz";
-	setAttr -av ".ry";
-	setAttr -av ".rx";
 	setAttr -l on ".s";
 	setAttr -k off ".sx";
 	setAttr -k off ".sy";
@@ -19073,10 +19041,6 @@ createNode hikFKJoint -n "Character1_Ctrl_LeftForeArm" -p "Character1_Ctrl_LeftA
 	setAttr -k off ".tx";
 	setAttr -k off ".ty";
 	setAttr -k off ".tz";
-	setAttr ".r" -type "double3" 2.1544849311651809e-005 0.00030970747663045233 0.00040647155674806035 ;
-	setAttr -av ".rz";
-	setAttr -av ".ry";
-	setAttr -av ".rx";
 	setAttr -l on ".s";
 	setAttr -k off ".sx";
 	setAttr -k off ".sy";
@@ -19099,10 +19063,6 @@ createNode hikFKJoint -n "Character1_Ctrl_LeftHand" -p "Character1_Ctrl_LeftFore
 	setAttr -k off ".tx";
 	setAttr -k off ".ty";
 	setAttr -k off ".tz";
-	setAttr ".r" -type "double3" -3.4150944132812138e-006 1.7075467763422903e-006 -1.1954497047579418e-005 ;
-	setAttr -av ".rz";
-	setAttr -av ".ry";
-	setAttr -av ".rx";
 	setAttr -l on ".s";
 	setAttr -k off ".sx";
 	setAttr -k off ".sy";
@@ -19903,9 +19863,9 @@ createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "E9E3041E-4BAF-DEC4-7F48-20843152BACC";
 createNode displayLayerManager -n "layerManager";
 	rename -uid "699D2EC1-4244-06FB-AFCB-9C85F180BAB4";
-	setAttr ".cdl" 4;
-	setAttr -s 4 ".dli[1:3]"  4 3 2;
-	setAttr -s 3 ".dli";
+	setAttr ".cdl" 1;
+	setAttr -s 4 ".dli[1:3]"  4 3 1;
+	setAttr -s 4 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "F626FA3A-4573-D2AC-ABEE-34AB9D3BED90";
 createNode renderLayerManager -n "renderLayerManager";
@@ -25249,7 +25209,8 @@ createNode animCurveTA -n "Character1_Ctrl_HipsEffector_rotateZ";
 	setAttr ".roti" 5;
 createNode displayLayer -n "Joint";
 	rename -uid "EFA59033-4218-E168-68CA-34B84AA40040";
-	setAttr ".c" 6;
+	setAttr ".hpb" yes;
+	setAttr ".c" 30;
 	setAttr ".do" 2;
 createNode objectSet -n "tweakSet2";
 	rename -uid "F974CAFC-4F1D-77F1-8EB1-C6A7A0958B60";
@@ -33490,6 +33451,11 @@ createNode groupParts -n "groupParts5";
 	rename -uid "E28BDF9E-4676-FB9B-6960-839874D22ECF";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 3 "f[0:1082]" "f[2061:3711]" "f[4690:5369]";
+createNode displayLayer -n "CtrlRig";
+	rename -uid "23B65A9B-4CC8-BC9C-30CA-4EBBEC542EEE";
+	setAttr ".hpb" yes;
+	setAttr ".c" 22;
+	setAttr ".do" 3;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -34065,7 +34031,7 @@ connectAttr "HIKState2Effector1.HipsEffectorGXM[0]" "Character1_Ctrl_HipsEffecto
 		;
 connectAttr "HIKState2Effector2.HipsEffectorGXM[0]" "Character1_Ctrl_HipsEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_HipsEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_HipsEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftAnkleEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_LeftAnkleEffector_rotateZ.o" "Character1_Ctrl_LeftAnkleEffector.rz"
@@ -34084,7 +34050,7 @@ connectAttr "HIKState2Effector1.LeftAnkleEffectorGXM[0]" "Character1_Ctrl_LeftAn
 		;
 connectAttr "HIKState2Effector2.LeftAnkleEffectorGXM[0]" "Character1_Ctrl_LeftAnkleEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftAnkleEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftAnkleEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightAnkleEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightAnkleEffector_rotateZ.o" "Character1_Ctrl_RightAnkleEffector.rz"
@@ -34103,7 +34069,7 @@ connectAttr "HIKState2Effector1.RightAnkleEffectorGXM[0]" "Character1_Ctrl_Right
 		;
 connectAttr "HIKState2Effector2.RightAnkleEffectorGXM[0]" "Character1_Ctrl_RightAnkleEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightAnkleEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightAnkleEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftWristEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_LeftWristEffector_rotateZ.o" "Character1_Ctrl_LeftWristEffector.rz"
@@ -34122,7 +34088,7 @@ connectAttr "HIKState2Effector1.LeftWristEffectorGXM[0]" "Character1_Ctrl_LeftWr
 		;
 connectAttr "HIKState2Effector2.LeftWristEffectorGXM[0]" "Character1_Ctrl_LeftWristEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftWristEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftWristEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightWristEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightWristEffector_rotateZ.o" "Character1_Ctrl_RightWristEffector.rz"
@@ -34141,7 +34107,7 @@ connectAttr "HIKState2Effector1.RightWristEffectorGXM[0]" "Character1_Ctrl_Right
 		;
 connectAttr "HIKState2Effector2.RightWristEffectorGXM[0]" "Character1_Ctrl_RightWristEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightWristEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightWristEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftKneeEffector.uagx";
 connectAttr "Character1_Ctrl_LeftKneeEffector_rotateZ.o" "Character1_Ctrl_LeftKneeEffector.rz"
 		;
@@ -34159,7 +34125,7 @@ connectAttr "HIKState2Effector1.LeftKneeEffectorGXM[0]" "Character1_Ctrl_LeftKne
 		;
 connectAttr "HIKState2Effector2.LeftKneeEffectorGXM[0]" "Character1_Ctrl_LeftKneeEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftKneeEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftKneeEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightKneeEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightKneeEffector_rotateZ.o" "Character1_Ctrl_RightKneeEffector.rz"
@@ -34178,7 +34144,7 @@ connectAttr "HIKState2Effector1.RightKneeEffectorGXM[0]" "Character1_Ctrl_RightK
 		;
 connectAttr "HIKState2Effector2.RightKneeEffectorGXM[0]" "Character1_Ctrl_RightKneeEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightKneeEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightKneeEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftElbowEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_LeftElbowEffector_rotateZ.o" "Character1_Ctrl_LeftElbowEffector.rz"
@@ -34197,7 +34163,7 @@ connectAttr "HIKState2Effector1.LeftElbowEffectorGXM[0]" "Character1_Ctrl_LeftEl
 		;
 connectAttr "HIKState2Effector2.LeftElbowEffectorGXM[0]" "Character1_Ctrl_LeftElbowEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftElbowEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftElbowEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightElbowEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightElbowEffector_rotateZ.o" "Character1_Ctrl_RightElbowEffector.rz"
@@ -34216,7 +34182,7 @@ connectAttr "HIKState2Effector1.RightElbowEffectorGXM[0]" "Character1_Ctrl_Right
 		;
 connectAttr "HIKState2Effector2.RightElbowEffectorGXM[0]" "Character1_Ctrl_RightElbowEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightElbowEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightElbowEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_ChestOriginEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_ChestOriginEffector_rotateZ.o" "Character1_Ctrl_ChestOriginEffector.rz"
@@ -34235,7 +34201,7 @@ connectAttr "HIKState2Effector1.ChestOriginEffectorGXM[0]" "Character1_Ctrl_Ches
 		;
 connectAttr "HIKState2Effector2.ChestOriginEffectorGXM[0]" "Character1_Ctrl_ChestOriginEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_ChestOriginEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_ChestOriginEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_ChestEndEffector.uagx";
 connectAttr "Character1_Ctrl_ChestEndEffector_rotateZ.o" "Character1_Ctrl_ChestEndEffector.rz"
 		;
@@ -34253,7 +34219,7 @@ connectAttr "HIKState2Effector1.ChestEndEffectorGXM[0]" "Character1_Ctrl_ChestEn
 		;
 connectAttr "HIKState2Effector2.ChestEndEffectorGXM[0]" "Character1_Ctrl_ChestEndEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_ChestEndEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_ChestEndEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftFootEffector.uagx";
 connectAttr "Character1_Ctrl_LeftFootEffector_rotateZ.o" "Character1_Ctrl_LeftFootEffector.rz"
 		;
@@ -34271,7 +34237,7 @@ connectAttr "HIKState2Effector1.LeftFootEffectorGXM[0]" "Character1_Ctrl_LeftFoo
 		;
 connectAttr "HIKState2Effector2.LeftFootEffectorGXM[0]" "Character1_Ctrl_LeftFootEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftFootEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftFootEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightFootEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightFootEffector_rotateZ.o" "Character1_Ctrl_RightFootEffector.rz"
@@ -34290,7 +34256,7 @@ connectAttr "HIKState2Effector1.RightFootEffectorGXM[0]" "Character1_Ctrl_RightF
 		;
 connectAttr "HIKState2Effector2.RightFootEffectorGXM[0]" "Character1_Ctrl_RightFootEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightFootEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightFootEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftShoulderEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_LeftShoulderEffector_rotateZ.o" "Character1_Ctrl_LeftShoulderEffector.rz"
@@ -34309,7 +34275,7 @@ connectAttr "HIKState2Effector1.LeftShoulderEffectorGXM[0]" "Character1_Ctrl_Lef
 		;
 connectAttr "HIKState2Effector2.LeftShoulderEffectorGXM[0]" "Character1_Ctrl_LeftShoulderEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftShoulderEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftShoulderEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightShoulderEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightShoulderEffector_rotateZ.o" "Character1_Ctrl_RightShoulderEffector.rz"
@@ -34328,7 +34294,7 @@ connectAttr "HIKState2Effector1.RightShoulderEffectorGXM[0]" "Character1_Ctrl_Ri
 		;
 connectAttr "HIKState2Effector2.RightShoulderEffectorGXM[0]" "Character1_Ctrl_RightShoulderEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightShoulderEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightShoulderEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_HeadEffector.uagx";
 connectAttr "Character1_Ctrl_HeadEffector_rotateZ.o" "Character1_Ctrl_HeadEffector.rz"
 		;
@@ -34346,7 +34312,7 @@ connectAttr "HIKState2Effector1.HeadEffectorGXM[0]" "Character1_Ctrl_HeadEffecto
 		;
 connectAttr "HIKState2Effector2.HeadEffectorGXM[0]" "Character1_Ctrl_HeadEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_HeadEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_HeadEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftHipEffector.uagx";
 connectAttr "Character1_Ctrl_LeftHipEffector_rotateZ.o" "Character1_Ctrl_LeftHipEffector.rz"
 		;
@@ -34364,7 +34330,7 @@ connectAttr "HIKState2Effector1.LeftHipEffectorGXM[0]" "Character1_Ctrl_LeftHipE
 		;
 connectAttr "HIKState2Effector2.LeftHipEffectorGXM[0]" "Character1_Ctrl_LeftHipEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftHipEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftHipEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightHipEffector.uagx";
 connectAttr "Character1_Ctrl_RightHipEffector_rotateZ.o" "Character1_Ctrl_RightHipEffector.rz"
 		;
@@ -34382,7 +34348,7 @@ connectAttr "HIKState2Effector1.RightHipEffectorGXM[0]" "Character1_Ctrl_RightHi
 		;
 connectAttr "HIKState2Effector2.RightHipEffectorGXM[0]" "Character1_Ctrl_RightHipEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightHipEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightHipEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftHandThumbEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_LeftHandThumbEffector_rotateZ.o" "Character1_Ctrl_LeftHandThumbEffector.rz"
@@ -34401,7 +34367,7 @@ connectAttr "HIKState2Effector1.LeftHandThumbEffectorGXM[0]" "Character1_Ctrl_Le
 		;
 connectAttr "HIKState2Effector2.LeftHandThumbEffectorGXM[0]" "Character1_Ctrl_LeftHandThumbEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftHandThumbEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftHandThumbEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftHandIndexEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_LeftHandIndexEffector_rotateZ.o" "Character1_Ctrl_LeftHandIndexEffector.rz"
@@ -34420,7 +34386,7 @@ connectAttr "HIKState2Effector1.LeftHandIndexEffectorGXM[0]" "Character1_Ctrl_Le
 		;
 connectAttr "HIKState2Effector2.LeftHandIndexEffectorGXM[0]" "Character1_Ctrl_LeftHandIndexEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftHandIndexEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftHandIndexEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftHandMiddleEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_LeftHandMiddleEffector_rotateZ.o" "Character1_Ctrl_LeftHandMiddleEffector.rz"
@@ -34439,7 +34405,7 @@ connectAttr "HIKState2Effector1.LeftHandMiddleEffectorGXM[0]" "Character1_Ctrl_L
 		;
 connectAttr "HIKState2Effector2.LeftHandMiddleEffectorGXM[0]" "Character1_Ctrl_LeftHandMiddleEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftHandMiddleEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftHandMiddleEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftHandRingEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_LeftHandRingEffector_rotateZ.o" "Character1_Ctrl_LeftHandRingEffector.rz"
@@ -34458,7 +34424,7 @@ connectAttr "HIKState2Effector1.LeftHandRingEffectorGXM[0]" "Character1_Ctrl_Lef
 		;
 connectAttr "HIKState2Effector2.LeftHandRingEffectorGXM[0]" "Character1_Ctrl_LeftHandRingEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftHandRingEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftHandRingEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_LeftHandPinkyEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_LeftHandPinkyEffector_rotateZ.o" "Character1_Ctrl_LeftHandPinkyEffector.rz"
@@ -34477,7 +34443,7 @@ connectAttr "HIKState2Effector1.LeftHandPinkyEffectorGXM[0]" "Character1_Ctrl_Le
 		;
 connectAttr "HIKState2Effector2.LeftHandPinkyEffectorGXM[0]" "Character1_Ctrl_LeftHandPinkyEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_LeftHandPinkyEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_LeftHandPinkyEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightHandThumbEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightHandThumbEffector_rotateZ.o" "Character1_Ctrl_RightHandThumbEffector.rz"
@@ -34496,7 +34462,7 @@ connectAttr "HIKState2Effector1.RightHandThumbEffectorGXM[0]" "Character1_Ctrl_R
 		;
 connectAttr "HIKState2Effector2.RightHandThumbEffectorGXM[0]" "Character1_Ctrl_RightHandThumbEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightHandThumbEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightHandThumbEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightHandIndexEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightHandIndexEffector_rotateZ.o" "Character1_Ctrl_RightHandIndexEffector.rz"
@@ -34515,7 +34481,7 @@ connectAttr "HIKState2Effector1.RightHandIndexEffectorGXM[0]" "Character1_Ctrl_R
 		;
 connectAttr "HIKState2Effector2.RightHandIndexEffectorGXM[0]" "Character1_Ctrl_RightHandIndexEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightHandIndexEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightHandIndexEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightHandMiddleEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightHandMiddleEffector_rotateZ.o" "Character1_Ctrl_RightHandMiddleEffector.rz"
@@ -34534,7 +34500,7 @@ connectAttr "HIKState2Effector1.RightHandMiddleEffectorGXM[0]" "Character1_Ctrl_
 		;
 connectAttr "HIKState2Effector2.RightHandMiddleEffectorGXM[0]" "Character1_Ctrl_RightHandMiddleEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightHandMiddleEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightHandMiddleEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightHandRingEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightHandRingEffector_rotateZ.o" "Character1_Ctrl_RightHandRingEffector.rz"
@@ -34553,7 +34519,7 @@ connectAttr "HIKState2Effector1.RightHandRingEffectorGXM[0]" "Character1_Ctrl_Ri
 		;
 connectAttr "HIKState2Effector2.RightHandRingEffectorGXM[0]" "Character1_Ctrl_RightHandRingEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightHandRingEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightHandRingEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_RightHandPinkyEffector.uagx"
 		;
 connectAttr "Character1_Ctrl_RightHandPinkyEffector_rotateZ.o" "Character1_Ctrl_RightHandPinkyEffector.rz"
@@ -34572,7 +34538,7 @@ connectAttr "HIKState2Effector1.RightHandPinkyEffectorGXM[0]" "Character1_Ctrl_R
 		;
 connectAttr "HIKState2Effector2.RightHandPinkyEffectorGXM[0]" "Character1_Ctrl_RightHandPinkyEffector.atx"
 		;
-connectAttr "Joint.di" "Character1_Ctrl_RightHandPinkyEffector.do";
+connectAttr "CtrlRig.di" "Character1_Ctrl_RightHandPinkyEffector.do";
 connectAttr "Character1_ControlRig.rao" "Character1_Ctrl_Hips.uagx";
 connectAttr "Character1_Ctrl_Hips_rotateZ.o" "Character1_Ctrl_Hips.rz";
 connectAttr "Character1_Ctrl_Hips_rotateY.o" "Character1_Ctrl_Hips.ry";
@@ -37673,6 +37639,7 @@ connectAttr "groupParts5.og" "groupParts6.ig";
 connectAttr "groupId17.id" "groupParts6.gi";
 connectAttr "polySurfaceShape1.o" "groupParts5.ig";
 connectAttr "groupId16.id" "groupParts5.gi";
+connectAttr "layerManager.dli[3]" "CtrlRig.id";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert4SG.pa" ":renderPartition.st" -na;
